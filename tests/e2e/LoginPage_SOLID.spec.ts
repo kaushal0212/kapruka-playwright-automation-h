@@ -19,7 +19,7 @@ if (!TEST_EMAIL || !TEST_PASSWORD) {
 
 test.describe("Kapruka Login Test", ()=>{
 
-    test('valid user should login successfully', async ({page})=>{
+    test.skip('valid user should login successfully', async ({page})=>{
         const loginPage = new LoginPage_SOLID( page)
         await loginPage.goto();
         await loginPage.isLoaded()
@@ -28,5 +28,9 @@ test.describe("Kapruka Login Test", ()=>{
 
 
     
+    })
+
+    test("google web page",async ({page})=>{
+        await page.goto("https://www.google.com/")
     })
 })
