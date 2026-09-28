@@ -50,7 +50,7 @@ pipeline {
                 reportName: 'Playwright HTML Report',
                 keepAll: true,
                 alwaysLinkToLastBuild: true,
-                allowMissing: true
+                allowMissing: false
             ])
 
             // Save screenshots, traces, videos etc.
