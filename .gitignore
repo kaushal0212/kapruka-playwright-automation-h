@@ -1,10 +1,23 @@
-
-# Playwright
-node_modules/
+# Node / Playwright
+/node_modules/
 /test-results/
 /playwright-report/
 /blob-report/
 /playwright/.cache/
 /playwright/.auth/
+
+# Environment files
 .env
-allure-results
+/config/.env.qa
+/config/.env.dev
+/config/.env.prod
+
+# Allure reports
+/allure-results/
+allure-report
+
+# Custom files
+/Rakesh-playwrightconfigts.txt
+
+# Saved Jenkins/Playwright reports
+/reports/
