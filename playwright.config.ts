@@ -19,7 +19,7 @@ export default defineConfig({
     baseURL: process.env.BASE_URL,
     // Take screenshot only when test fails
     screenshot: 'only-on-failure', //screenshot automatically on failure
-    trace: 'on',
+    trace: 'on', // for debug to genrerate >>test results/<testname>/trace.zip 
   },
   projects: [
     {

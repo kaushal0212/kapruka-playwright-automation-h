@@ -24,10 +24,7 @@ test.describe("Kapruka Login Test", ()=>{
         await loginPage.goto();
         await loginPage.isLoaded()
         await loginPage.login(TEST_EMAIL, TEST_PASSWORD);
-        
-
-
-    
+           
     })
 
     test("google web page",async ({page})=>{

@@ -15,19 +15,18 @@
 //   3. One single place to update if the base URL ever changes.
 // ============================================================================
 
-export const config = {
-    // process.env.BASE_URL lets CI/CD pipelines or local .env files override
+// process.env.BASE_URL lets CI/CD pipelines or local .env files override
     // this per environment (e.g. staging vs production) without touching code.
+    //"The || operator provides a fallback value. 
+    // If BASE_URL is available in the environment, it 
+    // uses that value. Otherwise, it uses the default URL."
+export const config = {
+
     baseUrl: process.env.BASE_URL || 'https://www.kapruka.com',    
 
-
+    loginPath: '/shops/customerAccounts/accountLogin.jsp',
+    
     // Specific page paths are kept separate from the base URL so they can be
     // reused/composed by other Page Objects later (e.g. CartPage, SignupPage).
-    loginPath: '/shops/customerAccounts/accountLogin.jsp',
 };
-//CI CD - yml files - 
-//if qa .env.qa
-//if prod .env.prod
 
-
-//pipeline - drop down - 

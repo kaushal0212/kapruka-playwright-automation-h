@@ -22,6 +22,12 @@ async fill(locator: Locator, value: string): Promise<void>
     await locator.waitFor({state: 'visible'})
     await locator.fill(value);
 }
+
+// scrollToElement
+async scrollToElement(element:Locator): Promise<void>
+{
+    await element.scrollIntoViewIfNeeded()
+}
 abstract isLoaded(): Promise <void>;
 
 }

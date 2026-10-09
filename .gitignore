@@ -15,6 +15,7 @@
 # Allure reports
 /allure-results/
 allure-report
+/screenshots/
 
 # Custom files
 /Rakesh-playwrightconfigts.txt
